@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Love Letter</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Extra background hearts animation */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .background-heart {
+      position: absolute;
+      font-size: 100px;
+      color: rgba(255,0,102,0.2);
+      animation: floatHeart 10s infinite linear;
+    }
+
+    @keyframes floatHeart {
+      0% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(50vh) rotate(180deg); }
+      100% { transform: translateY(100vh) rotate(360deg); }
+    }
+
+    .letter-container {
+      background: rgba(255,255,255,0.9);
+      margin: 100px auto;
+      padding: 40px;
+      border-radius: 20px;
+      width: 70%;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      animation: fadeInUp 2s ease;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      color: #cc0066;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating background hearts -->
+  <div class="background-heart" style="left:10%; top:-100px;">❤</div>
+  <div class="background-heart" style="left:50%; top:-200px; animation-delay:3s;">❤</div>
+  <div class="background-heart" style="left:80%; top:-150px; animation-delay:6s;">❤</div>
+
+  <!-- Love Letter Content -->
+  <div class="letter-container">
+    <h1>Your Love Letter 💌</h1>
+    <p>
+      My dearest,<br><br>
+      hawn bektob 3a ra7ti shway, badi 2elik 2eno hayda 2az8ar shi b2admo la 2elik w b3ref 2eno m2aser w kteer, bass i promise you 2eno kell shi 7a ykon metl ma badna w 7a dal 7ebik 3atol w badal l3omor 3omrayn<3
+      <br><br>
+      Yours always,<br>
+      My Valentine
+    </p>
+  </div>
+</body>
+</html>
